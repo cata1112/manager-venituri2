@@ -1,0 +1,40 @@
+&lt;!DOCTYPE html&gt;
+&lt;html lang="ro"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Manager Venituri Magazin&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;h1&gt;Manager Venituri Magazin&lt;/h1&gt;
+        
+        &lt;div class="input-section"&gt;
+            &lt;h2&gt;Adaugă Venit Zilnic&lt;/h2&gt;
+            &lt;form id="incomeForm"&gt;
+                &lt;label for="date"&gt;Data:&lt;/label&gt;
+                &lt;input type="date" id="date" required&gt;
+                
+                &lt;label for="amount"&gt;Suma (RON):&lt;/label&gt;
+                &lt;input type="number" id="amount" step="0.01" required&gt;
+                
+                &lt;button type="submit"&gt;Adaugă&lt;/button&gt;
+            &lt;/form&gt;
+        &lt;/div&gt;
+        
+        &lt;div class="records-section"&gt;
+            &lt;h2&gt;Înregistrări&lt;/h2&gt;
+            &lt;ul id="recordsList"&gt;&lt;/ul&gt;
+        &lt;/div&gt;
+        
+        &lt;div class="summary-section"&gt;
+            &lt;h2&gt;Rezumat Lunar&lt;/h2&gt;
+            &lt;p&gt;Profit Total: &lt;span id="totalProfit"&gt;0.00&lt;/span&gt; RON&lt;/p&gt;
+            &lt;button id="clearAll"&gt;Șterge Toate Înregistrările&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
